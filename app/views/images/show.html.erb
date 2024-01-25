@@ -1,0 +1,23 @@
+<div style="width: 200px; height: auto;">
+  <% if @good.main_image.attached? %>
+    <%= link_to image_tag(@good.main_image.variant(resize: '200x200'), "style: 100%"), goods_path %>
+  <% end %>
+</div>
+
+<div style="width: 200px; height: auto;">
+  <% if @service.main_image.attached? %>
+    <%= link_to image_tag(@service.main_image.variant(resize: '200x200'), "style: 100%"), services_path %>
+  <% end %>
+</div>
+
+<div style="width: 200px; height: auto;">
+  <% if @free.main_image.attached? %>
+    <%= link_to image_tag(@free.main_image.variant(resize: '200x200'), "style: 100%"), frees_path %>
+  <% end %>
+</div>
+
+<div style="width: 200px; height: auto;">
+  <% if @community.main_image.attached? %>
+    <%= link_to image_tag(@community.main_image.variant(resize: '200x200'), "style: 100%"), communities_path %>
+  <% end %>
+</div>

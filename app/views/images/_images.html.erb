@@ -1,0 +1,29 @@
+<!-- Your main view file -->
+
+<%= form_with(model: good, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: good %>
+<% end %>
+
+<%= form_with(model: service, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: service %>
+<% end %>
+
+<%= form_for @free, html: { multipart: true } do |form| %>
+  <%= render 'image_form_fields', f: form, model: @free %>
+<% end %>
+
+<%= form_with(model: community, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: community %>
+<% end %>
+
+<%= form_with(model: user_good, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: user_good %>
+<% end %>
+
+<%= form_with(model: user_service, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: user_service %>
+<% end %>
+
+<%= form_with(model: user_free_stuff, local: true) do |f| %>
+  <%= render 'image_form_fields', f: f, model: user_free_stuff %>
+<% end %>
